@@ -99,7 +99,7 @@ void drawTail() {
 void manageTail() {
   //After drawing the tail, add a new segment at the "start" of the tail and remove the one at the "end" 
   //This produces the illusion of the snake tail moving.
- checkTailCollision();
+ //checkTailCollision();
   drawTail();
   if(tail.size()>0){
       tail.add(new Segment(head.x,head.y));
@@ -198,9 +198,9 @@ if(head.x==foodX&& head.y ==foodY ){
   foodX = ((int)random(50)*10);
   foodY = ((int)random(50)*10);
   foodeaten++;
- // for(int i =0; i<1000;i++){
+  for(int i =0; i<100;i++){
   tail.add(new Segment(head.x,head.y));
  
-  //}
+  }
 }
 }
